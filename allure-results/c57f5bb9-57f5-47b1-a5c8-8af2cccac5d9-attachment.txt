@@ -1,0 +1,9 @@
+ищу элемент input[data-ng-model="$ctrl.registration.FirstName"]
+нашёл элемент input[data-ng-model="$ctrl.registration.FirstName"]
+прокрутка не отработала
+ищу элемент input[data-ng-model="$ctrl.registration.FirstName"]
+нашёл элемент input[data-ng-model="$ctrl.registration.FirstName"]
+прокрутка не отработала
+вписал текст в input[data-ng-model="$ctrl.registration.FirstName"]
+текст виден Геннадий
+сделал скриншот: 100.png в папку assets
