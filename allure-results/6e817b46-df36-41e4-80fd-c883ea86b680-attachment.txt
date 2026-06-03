@@ -1,9 +1,0 @@
-ищу элемент button.btn-submit.registration-action
-нашёл элемент button.btn-submit.registration-action
-прокрутка не отработала
-проверка на клик button.btn-submit.registration-action
-кликнул на элемент button.btn-submit.registration-action
-ищу элемент a[href="https://steiks.ru/myaccount"]
-нашёл элемент a[href="https://steiks.ru/myaccount"]
-прокрутка не отработала
-сделал скриншот: 106.png в папку assets

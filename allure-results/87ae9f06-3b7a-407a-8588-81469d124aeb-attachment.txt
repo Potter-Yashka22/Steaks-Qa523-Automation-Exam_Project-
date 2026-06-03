@@ -1,9 +1,0 @@
-ищу элемент email
-нашёл элемент email
-прокрутка не отработала
-ищу элемент button[type="submit"]
-нашёл элемент button[type="submit"]
-прокрутка не отработала
-ищу элемент .login-header__title
-нашёл элемент .login-header__title
-прокрутка не отработала
