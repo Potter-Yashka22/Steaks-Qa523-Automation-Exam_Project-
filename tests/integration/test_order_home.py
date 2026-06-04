@@ -1,4 +1,4 @@
-from time import process_time
+
 
 from src.steaks_funk import *
 import pytest
@@ -56,7 +56,6 @@ def test_order_home1(auth_valid_start):
 @allure.feature('удаление из корзины: интеграция кнопки каталога и счетчика в шапке сайта')
 @allure.story('Удаление блюда из корзины и уменьшение счетчика')
 def test_remove_food_from_cart(launch, auth_valid_start):
-    # launch = auth_valid_start
     time.sleep(1)
     with allure.step('Проверяем, что находимся в корзине с добавленными товарами'):
         assert "/cart" in launch.current_url

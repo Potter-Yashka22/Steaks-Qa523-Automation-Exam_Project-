@@ -113,21 +113,7 @@ def test_add_card_to_cart(auth_valid_start,card_id,card_name,expected_price,scre
         time.sleep(2)
 
 
-        # with allure.step('проверяю что корзина не пуста'):
-        #     cart_item=toFind(launch,By.CSS_SELECTOR,'.cart-mini-main-count')
-        #     cart_text=cart_item.text.strip()
-        #     # assert card_name in cart_item.text
-        #     assert cart_text!='0',f'Корзина пуста: {cart_text}'
-        #     assert cart_text!='flex',f"Получен текст 'flex' вместо количества"
-        #     assert cart_text!='', "Счетчик корзины пустой"
 
-        # между строками 74-75 # select_object=Select(time_drop)
-        #         # select_object.select_by_index(1)
-
-
-        # между строками 71-74 # time_field=toFind(launch,By.CSS_SELECTOR,"select[data-ng-model='shippingList.selectShipping.TimeOfDelivery']")
-        #         # assert time_field.is_displayed(), "Ошибка! После клика на 'Самовывоз' поле выбора времени не появилось!"
-        # на 74ой строке была # time_drop=toFind(launch,By.CSS_SELECTOR,'select[ng-model="shippingList.selectShipping.TimeOfDelivery"]')
 
 
 

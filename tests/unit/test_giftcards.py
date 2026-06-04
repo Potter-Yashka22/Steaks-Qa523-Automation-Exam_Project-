@@ -44,15 +44,7 @@ def test_add_card_to_cart(auth_valid_start,card_id,card_name,expected_price,scre
         time.sleep(1)
 
 
-'''
-этот шаг нужен в случае если разрабы опять перепишут код и всплывающая корзина
- будет перекрывать кнопки добавления карт
-# toClick(launch,By.CSS_SELECTOR,f'[data-offer-id="{offer_id}"] button.cart-add___button-add')
-    # with allure.step('Закрываю всплывающее окно корзины'):
-    #     time.sleep(1)
-    #     close_button=toFind(launch,By.CSS_SELECTOR,'.sidebar__close')
-    #     close_button.click()
-    #     time.sleep(1)'''
+
 
 
 

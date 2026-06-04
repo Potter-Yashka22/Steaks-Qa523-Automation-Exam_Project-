@@ -2,7 +2,7 @@
 import time
 
 import allure
-from selenium.webdriver.common.devtools.v146.storage import get_storage_key_for_frame
+
 
 from src.steaks_funk import *
 import pytest

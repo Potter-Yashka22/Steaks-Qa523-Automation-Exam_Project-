@@ -37,32 +37,7 @@ def test_to_private_office(auth_valid_start,value,screen,expected_text):
     assert "/myaccount" in launch.current_url
     assert getScreen(launch, num=screen)
     launch.delete_all_cookies()
-# @pytest.mark.negative
-# @allure.story('Негативные проверки изменения данных в ЛК')
-# @pytest.mark.parametrize("new_password,confirm_password,screen,expected_error",[
-#     ("  ","  ",310,"Неверные данные"),
-#     ("super-pass123","wrong-confirm",311,"Введенные пароли не совпадают"),
-#     ("1","1",312,"Длина пароля должна быть не менее 6 символов")
-# ])
-# def test_private_office_change_password_negative(auth_valid_start,new_password,confirm_password,screen,expected_error):
-#     launch = auth_valid_start('borzoy_33@mail.ru', 'streaky098')
-#     with allure.step('переходим в личный кабинет'):
-#         time.sleep(2)
-#         lk_button=toFind(launch,By.CSS_SELECTOR,'a[href*="myaccount"]')
-#         launch.execute_script("arguments[0].click();",lk_button)
-#         # launch.execute_script("arguments[0].click();",toFind(launch,By.CSS_SELECTOR,'a.site-head-btn[href*="myaccount"]'))
-#     with allure.step('переходим на вкладку "Смена пароля"'):
-#         toClick(launch,By.LINK_TEXT,'Смена пароля')
-#         time.sleep(1)
-#     with allure.step('заполняем форму некорректными паролями'):
-#         toSend(launch,By.ID,'NewPassword',new_password)
-#         toSend(launch,By.ID,'NewPasswordConfirm',confirm_password)
-#         toClick(launch,By.CSS_SELECTOR,"button[data-button-validation-success*='changePassword']")
-#         time.sleep(1)
-#     with allure.step(f'проверяю появление ошибки: "{expected_error}"'):
-#         main_block=toFind(launch,By.TAG_NAME,'main')
-#         assert expected_error.lower() in main_block.text.lower(),f"Ошибка '{expected_error}' не появилась!"
-#         getScreen(launch,num=screen)
+
 
 
 

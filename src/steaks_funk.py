@@ -53,7 +53,7 @@ def toSendNoTyping(driver,by,item,text):
         t1=r1.get_attribute('value')
         print(f'текст виден {t1}')
     except:
-        print('теста неть')
+        print('текста нет')
     return True
 
 

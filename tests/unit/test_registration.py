@@ -18,8 +18,6 @@ def test_registration(launch):
     cont_btn=toFind(launch,By.CSS_SELECTOR,'button[type="submit"]')
     cont_btn.click()
     time.sleep(1.5)
-    # toClick(launch,By.LINK_TEXT,'Регистрация')
-    # e0=toFind(launch,By.CLASS_NAME,'page-title')
     with allure.step('проверяю в заголовке наличие слова "Регистрация"'):
         reg_title=toFind(launch,By.CSS_SELECTOR,'.login-header__title')
         header_text=reg_title.text.strip()
@@ -46,17 +44,6 @@ def test_reg_type2(launch):
         assert t2.get_attribute('required') is not None
     with allure.step('Делаю скриншот'):
         assert getScreen(launch,101)
-# @pytest.mark.high
-# @allure.feature('Регистрация: обязательные поля')
-# @allure.story('Проверка значения required у поля Email')
-# def test_reg_type3(launch):
-#     toFind(launch,By.ID,'Email')
-#     toSendNoTyping(launch,By.ID,'Email','75b8a12039@emailinbo.live')
-#     t1=toFind(launch,By.ID,'Email')
-#     with allure.step('Проверяю наличие значения required пр заполнении поля Email'):
-#         assert t1.get_attribute('required') is not None
-#     with allure.step('Делаю скриншот'):
-#         assert getScreen(launch,102)
 @pytest.mark.high
 @allure.feature('Регистрация: обязательные поля')
 @allure.story('Проверка значения required у поля Phone')
@@ -116,15 +103,7 @@ def test_reg_type7(launch):
         assert "Мой ЛК" in t1.text
     with allure.step('Делаю скриншот'):
         assert getScreen(launch,106)
-# все тесты проходят, в т.ч. на поиск кнопки Мой ЛК после успешной регистрации
 
-
-# Не смог найти кнопку разлогиниться, уточнить писать ли тест на это
-'''
-def test_logout_button_absent(launch):
-    logout_btn = toFind(launch, By.CLASS_NAME, "logout-btn")
-    assert logout_btn is None, "Кнопка выхода присутствует на странице"
-'''
 
 
 

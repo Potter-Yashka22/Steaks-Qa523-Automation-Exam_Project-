@@ -29,9 +29,6 @@ def test_private_office_change_password_negative(auth_valid_start,new_password,c
             assert getScreen(launch, num=312)
 
 
-# WebDriverWait(launch,5).until(
-            #     EC.text_to_be_present_in_element((By.CSS_SELECTOR,".toast-message"),"Длина пароля должна быть не менее 6 символов")
-            # )
 
 
 
